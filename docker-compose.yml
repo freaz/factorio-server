@@ -1,0 +1,18 @@
+version: '3'
+services:
+  server:
+    image: dtandersen/factorio
+    ports:
+      - "34197:34197/udp"
+      - "27015:27015/tcp"
+    volumes:
+      - data:/factorio
+    restart: always
+  data:
+    image: busybox
+    working_dir: /mnt/data
+    volumes:
+      - data:/mnt/data
+volumes:
+  data:
+

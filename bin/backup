@@ -1,0 +1,4 @@
+#!/bin/sh
+
+docker-compose run --rm --volume $1:/mnt/backup data sh -c "cp -r /mnt/data/* /mnt/backup"
+
