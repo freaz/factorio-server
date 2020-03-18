@@ -1,7 +1,6 @@
 # Factorio server
 
-* https://hub.docker.com/r/dtandersen/factorio/
-* https://github.com/dtandersen/docker_factorio_server
+* https://github.com/factoriotools/factorio-docker
 
 ## Commands
 
