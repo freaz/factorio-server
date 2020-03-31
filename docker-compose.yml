@@ -2,11 +2,12 @@ version: '3'
 services:
   server:
     image: factoriotools/factorio:stable
+    container_name: factorio_server
+    environment:
+      SAVE_NAME: factorio_game
     ports:
-      - "34197:34197/udp"
-      - "27015:27015/tcp"
+      - '34197:34197/udp'
+      - '27015:27015/tcp'
     volumes:
-      - data:/factorio
+      - ./data:/factorio
     restart: always
-volumes:
-  data:
